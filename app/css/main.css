@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  transition: margin 0.5s ease; }
+
+.navbar__logo {
+  font-size: 3em;
+  color: white;
+  font-weight: bolder; }
+
+.navbar__toggle {
+  color: white;
+  font-size: 1.5em; }
+
+.navbar__menu-list {
+  background: white;
+  height: 0px;
+  width: 0px;
+  left: 0;
+  padding-top: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: 100px;
+  transition: all 0.5s ease;
+  text-align: center; }
+  .navbar__menu-list > a {
+    color: black;
+    text-decoration: none; }
+    .navbar__menu-list > a > li {
+      padding: 20px 15px; }
+
+.container--intro {
+  width: 100%;
+  background-image: url("../images/front-page/front-page-header.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 160px 20px 80px;
+  text-align: center; }
+  .intro-content span {
+    color: #369;
+    font-size: 1em; }
+  .intro-content > h1 {
+    font-size: 5em;
+    color: white;
+    font-weight: 700;
+    transition: margin-top 0.5s ease; }
+  .intro-content > p {
+    font-size: 0.8em;
+    color: white;
+    line-height: 1.8;
+    margin-top: 30px;
+    margin-bottom: 40px; }
+  .intro-content > button {
+    border-radius: 2px;
+    margin-top: 20px;
+    padding: 20px 0;
+    width: 260px;
+    font-size: 1em; }
+  .intro-content .button--white {
+    background: rgba(255, 255, 255, 0.2);
+    border: 3px solid white;
+    color: white; }
+  .intro-content .button--blue {
+    background: #369;
+    border: 3px solid #369; }
