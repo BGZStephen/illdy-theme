@@ -1,6 +1,8 @@
 .about-content {
   @include flex-col;
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   justify-content: center;
   padding: 60px 15px;
   text-align: center;
@@ -12,15 +14,23 @@
     color: $font--grey;
     line-height: 1.8;
     margin-bottom: 20px;
+    @media (min-width: 768px) {
+      width: 80%;
+    }
   }
 }
 
 .skills-container {
   width: 100%;
   padding: 0 20px;
+  @media (min-width: 768px) {
+    display: flex;
+
+  }
 }
 
 .skills-item {
+  width: 100%;
   margin: 40px 0;
   text-align: left;
   position: relative;
@@ -46,6 +56,11 @@
     background: $font--purple;
     width: 86%
   }
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+    width: 33%;
+  }
 }
 
 .skills-item--orange {
@@ -61,6 +76,9 @@
   top: -13px;
   background: $font--orange;
   color: white;
+  @media (min-width: 768px) {
+    top: 64px;
+  }
 }
 
 .skills-item--blue {
@@ -76,6 +94,9 @@
   top: -13px;
   background: $font--blue;
   color: white;
+  @media (min-width: 768px) {
+    top: 64px;
+  }
 }
 
 .skills-item--purple {
@@ -91,4 +112,7 @@
   top: -13px;
   background: $font--purple;
   color: white;
+  @media (min-width: 768px) {
+    top: 64px;
+  }
 }

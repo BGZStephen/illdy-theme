@@ -10,6 +10,7 @@
   @include flex-col;
   justify-content: center;
   padding: 160px 20px 80px;
+  height: 1000px;
   text-align: center;
   span {
     color: $font--blue;
@@ -20,13 +21,19 @@
     color: white;
     font-weight: 700;
     transition: margin-top 0.5s ease;
+    @media (min-width: 768px) {
+      font-size: 6em;
+    }
   }
   > p {
-    font-size: 0.8em;
+    font-size: 1em;
     color: white;
     line-height: 1.8;
     margin-top: 30px;
     margin-bottom: 40px;
+    @media (min-width: 768px) {
+      width: 70%;
+    }
   }
   > button {
     border-radius: 2px;
@@ -41,8 +48,19 @@
   background: rgba(255,255,255,0.2);
   border: 3px solid white;
   color: white;
+  transition: background 0.3s ease;
 }
+.button--white:hover {
+  background: rgba(255,255,255,0);
+}
+
 .button--blue {
   background: $font--blue;
   border: 3px solid $font--blue;
+  transition: all 0.3s ease;
+}
+
+.button--blue:hover {
+  background: $font--purple;
+  border: 3px solid $font--purple;
 }

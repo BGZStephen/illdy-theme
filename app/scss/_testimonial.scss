@@ -35,6 +35,11 @@
     color: white;
     line-height: 1.8;
     font-style: italic;
+    @media (min-width: 768px) {
+      margin: 0 auto;
+      width: 80%;
+      max-width: 1200px;
+    }
   }
   > span {
     display: block;

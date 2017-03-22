@@ -16,11 +16,21 @@
   font-size: 3em;
   color: white;
   font-weight: bolder;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar__logo:hover,
+.navbar__menu-list a:hover {
+  color: $font--blue;
 }
 
 .navbar__toggle {
   color: white;
   font-size: 1.5em;
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .navbar__menu-list {
@@ -37,8 +47,23 @@
   > a {
     color: black;
     text-decoration: none;
+    transition: color 0.2s ease;
+    @media (min-width: 1024px) {
+      color: white;
+      font-size: 1.2em;
+      font-weight: 700;
+    }
     > li {
       padding: 20px 15px;
     }
+  }
+  @media (min-width: 1024px) {
+    display: flex;
+    position: relative;
+    height: auto;
+    width: auto;
+    top: 0;
+    list-style: none;
+    background: none;
   }
 }
