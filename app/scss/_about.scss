@@ -24,11 +24,14 @@
   margin: 40px 0;
   text-align: left;
   position: relative;
+  > p > i {
+    margin-right: 10px;
+  }
   > .progress-bar {
     height: 8px;
     background: black;
     border-radius: 10px;
-    margin: 75px 0 20px;
+    margin: 75px 0 30px;
   }
   .progress-bar-orange {
     background: $font--orange;

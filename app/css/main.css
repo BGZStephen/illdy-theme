@@ -111,11 +111,13 @@
   margin: 40px 0;
   text-align: left;
   position: relative; }
+  .skills-item > p > i {
+    margin-right: 10px; }
   .skills-item > .progress-bar {
     height: 8px;
     background: black;
     border-radius: 10px;
-    margin: 75px 0 20px; }
+    margin: 75px 0 30px; }
   .skills-item .progress-bar-orange {
     background: #f18b6d;
     width: 60%; }
@@ -164,3 +166,29 @@
   top: -13px;
   background: #6a4d8a;
   color: white; }
+
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0 0;
+  width: 100%; }
+  .portfolio-content > h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px; }
+  .portfolio-content > p {
+    color: #8c9597;
+    line-height: 1.8;
+    margin-bottom: 60px; }
+
+.prtfolio__image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.prtfolio__image {
+  width: 50%; }
+  .prtfolio__image > img {
+    width: 100%;
+    vertical-align: top; }
