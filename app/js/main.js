@@ -14,3 +14,12 @@ navToggle.addEventListener(`click`, function() {
     introHeader.style.marginTop = "430px";
   }
 })
+
+// Slick carousel
+
+$(document).ready(function(){
+  $('.slick-container').slick({
+    arrows: false,
+    dots: true
+  });
+});

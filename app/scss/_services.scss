@@ -1,0 +1,48 @@
+.services-content {
+  @include flex-col;
+  padding: 60px 15px;
+  text-align: center;
+  > h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+  }
+  > p {
+    line-height: 1.6;
+    color: $font--grey;
+    margin-bottom: 70px;
+  }
+}
+
+.services__container {
+  @include flex-col;
+  > .services__item {
+    margin-bottom: 50px;
+    > i {
+      margin-bottom: 5px;
+    }
+    > h3 {
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+    > p {
+      color: $font--grey;
+      line-height: 1.7;
+    }
+  }
+
+  > .services__item--orange {
+    > i, > h3 {
+      color: $font--orange;
+    }
+  }
+  > .services__item--blue {
+    > i, > h3 {
+      color: $font--blue;
+    }
+  }
+  > .services__item--pruple {
+    > i, > h3 {
+      color: $font--purple;
+    }
+  }
+}
