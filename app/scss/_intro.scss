@@ -5,6 +5,7 @@
   background-position: center;
   position: relative;
 }
+
 .intro-content {
   @include flex-col;
   justify-content: center;
@@ -33,14 +34,15 @@
     padding: 20px 0;
     width: 260px;
     font-size: 1em;
-  }
-  .button--white {
-    background: rgba(255,255,255,0.2);
-    border: 3px solid white;
-    color: white;
-  }
-  .button--blue {
-    background: $font--blue;
-    border: 3px solid $font--blue;
-  }
+}
+
+}
+.button--white {
+  background: rgba(255,255,255,0.2);
+  border: 3px solid white;
+  color: white;
+}
+.button--blue {
+  background: $font--blue;
+  border: 3px solid $font--blue;
 }
