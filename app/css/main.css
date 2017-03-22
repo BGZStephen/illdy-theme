@@ -516,7 +516,8 @@ li.slick-active button {
   @media (min-width: 768px) {
     .team__container {
       flex-direction: row;
-      justify-content: space-between; } }
+      justify-content: space-between;
+      align-items: flex-start; } }
 
 .team__item {
   width: 100%;
