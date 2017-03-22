@@ -1,0 +1,25 @@
+.contact-content {
+  @include flex-col;
+  width: 100%;
+  padding: 20px 15px 60px;
+  > h2 {
+    font-size: 2.2em;
+    margin-bottom: 60px;
+  }
+}
+
+.contact__item {
+  width: 100%;
+  margin-bottom: 40px;
+  > .font--blue {
+    color: $font--blue;
+    margin-bottom: 10px;
+  }
+}
+
+.contact__item--social {
+  > a {
+    color: $font--grey;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,26 @@
+.footer-content {
+  @include flex-col;
+  width: 100%;
+  padding: 10px 15px;
+  background: #292825;
+}
+
+.footer__item {
+  width: 100%;
+  > p {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 20px 0 30px;
+  }
+  > ul {
+    list-style: none;
+  }
+  > ul > a {
+    text-decoration: none;
+    font-size: 1.1em;
+    display: block;
+    color: $font--grey;
+    margin: 10px 0;
+  }
+}
